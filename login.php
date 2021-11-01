@@ -56,6 +56,10 @@ if(!empty($_POST['username']) && !empty($_POST['password'])){
 
 ?>
 
+<?php
+include "index-header.php";
+
+?>
 
 
 <!DOCTYPE html>
@@ -70,16 +74,13 @@ if(!empty($_POST['username']) && !empty($_POST['password'])){
 <body>
 	
 
-<div class="container">
-<?php
-
-
-?>
+<div class="container mt-5">
+	
 	<form class="well form-horizontal" action="" method="post"  id="contact_form">
 		<fieldset>
 		
 		<!-- Form Name -->
-		<legend><center><h2><b>Login Form</b></h2></center></legend><br>
+		<legend><center><h2><b>فرم ثبت نام </b></h2></center></legend><br>
 		
 		
 		
@@ -88,7 +89,7 @@ if(!empty($_POST['username']) && !empty($_POST['password'])){
 		<!-- Text input-->
 		
 		<div class="form-group">
-		<label class="col-md-8 control-label">Username</label>  
+		<label class="col-md-8 control-label">اسم کاربری </label>  
 		<div class="col-md-8 inputGroupContainer">
 		<div class="input-group">
 		<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -100,7 +101,7 @@ if(!empty($_POST['username']) && !empty($_POST['password'])){
 		<!-- Text input-->
 		
 		<div class="form-group">
-		<label class="col-md-8 control-label" >Password</label> 
+		<label class="col-md-8 control-label" >رمز عبور </label> 
 			<div class="col-md-8 inputGroupContainer">
 			<div class="input-group">
 		<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -114,16 +115,21 @@ if(!empty($_POST['username']) && !empty($_POST['password'])){
 		
 		<!-- Button -->
 		<div class="form-group">
-		<label class="col-md-4 control-label offset-6"></label>
+		<label class="col-md-6 control-label offset-6"></label>
 		<div class="col-md-6 offset-6" ><br>
-			<button type="submit" name="login" class="btn btn-warning"> <span class="glyphicon glyphicon-send"> Submit</span></button>
+			<button type="submit" name="login" class="btn btn-warning"> <span class="glyphicon glyphicon-send"> ورود</span></button>
 		</div>
+		
+		<div class="col-md-12 " ><br>
+		<a href="register.php"><button class="btn btn-primary">ثبت نام</button></a>
+		</div>
+		
 		</div>
 		
 		</fieldset>
 	</form>
 
-	<a href="register.php"><button class="btn btn-primary">Register</button></a>
+	
 
 </div><!-- /.container -->
 
@@ -132,3 +138,6 @@ if(!empty($_POST['username']) && !empty($_POST['password'])){
 		
 </body>
 </html>
+
+
+<?php include "index-footer.php"; ?>
