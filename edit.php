@@ -32,7 +32,7 @@ if(isset($_POST['update'])){
 		$id = $_GET['id']; 
 	
 	
-		$sql = "UPDATE post SET title='$title', author='$author ', category='$category' , content='$content' , date='$date' WHERE id=$id";
+		$sql = "UPDATE post SET title='$title', author='$author', category='$category' , content='$content' , date='$date' WHERE id=$id";
 
 		var_dump($conn->query($sql));
 	

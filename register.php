@@ -48,6 +48,8 @@ if(!empty($_POST['fullname']) && !empty($_POST['username']) && !empty($_POST['pa
 ?>
 
 
+<?php include "index-header.php"; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,12 +60,12 @@ if(!empty($_POST['fullname']) && !empty($_POST['username']) && !empty($_POST['pa
 	<style>
 	
 	</style>
-	<title>Document</title>
+	<title>سایت جدید |فرم ثبت نام</title>
 </head>
 <body>
 	
 
-<div class="container">
+<div class="container mt-5">
 
 
 
@@ -72,12 +74,12 @@ if(!empty($_POST['fullname']) && !empty($_POST['username']) && !empty($_POST['pa
 		<fieldset>
 		
 		<!-- Form Name -->
-		<legend><center><h2><b>Register Form</b></h2></center></legend><br>
+		<legend><center><h2><b>فرم ثبت نام</b></h2></center></legend><br>
 		
 		<!-- Text input-->
 		
 		<div class="form-group">
-		<label class="col-md-4 control-label">Full Name</label>  
+		<label class="col-md-4 control-label">نام و نام خانوادگی</label>  
 		<div class="col-md-4 inputGroupContainer">
 		<div class="input-group">
 		<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -89,7 +91,7 @@ if(!empty($_POST['fullname']) && !empty($_POST['username']) && !empty($_POST['pa
 		<!-- Text input-->
 		
 		<div class="form-group">
-		<label class="col-md-4 control-label">Username</label>  
+		<label class="col-md-4 control-label">نام کاربری </label>  
 		<div class="col-md-4 inputGroupContainer">
 		<div class="input-group">
 		<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -101,7 +103,7 @@ if(!empty($_POST['fullname']) && !empty($_POST['username']) && !empty($_POST['pa
 		<!-- Text input-->
 		
 		<div class="form-group">
-		<label class="col-md-4 control-label" >Password</label> 
+		<label class="col-md-4 control-label" >رمز عبور </label> 
 			<div class="col-md-4 inputGroupContainer">
 			<div class="input-group">
 		<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
@@ -115,8 +117,8 @@ if(!empty($_POST['fullname']) && !empty($_POST['username']) && !empty($_POST['pa
 		<div class="form-group">
 		<label class="col-md-4 control-label"></label>
 		<div class="col-md-4"><br>
-			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<button type="submit" name=register class="btn btn-warning" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSUBMIT <span class="glyphicon glyphicon-send"></span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</button>
-		</div>
+		<button type="submit" name=register class="btn btn-warning" >ثبت نام  <span class="glyphicon glyphicon-send"></span></button>
+		</div> 
 		</div>
 		
 		</fieldset>
@@ -129,3 +131,5 @@ if(!empty($_POST['fullname']) && !empty($_POST['username']) && !empty($_POST['pa
 		
 </body>
 </html>
+
+<?php include "index-footer.php"; ?>

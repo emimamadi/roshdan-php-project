@@ -80,7 +80,7 @@ include "index-header.php";
 		<fieldset>
 		
 		<!-- Form Name -->
-		<legend><center><h2><b>فرم ثبت نام </b></h2></center></legend><br>
+		<legend><center><h2><b> فرم ورود  </b></h2></center></legend><br>
 		
 		
 		

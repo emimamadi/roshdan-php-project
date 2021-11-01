@@ -40,8 +40,12 @@ include "db.php";
 <!----------------------------------------------------header------------------------------------------------------->
 
 
+<?php
+// var_dump($_SESSION);
 
 
+
+?>
 
 
 
@@ -75,19 +79,26 @@ include "db.php";
 
 
 
-                            <?php  if(!empty($_SESSION["login_user"])&& !empty($row["author"])){
-                                    if($_SESSION["login_user"]==$row["author"]){
+<?php                           
                                         
+                                        
+                                        if($_SESSION["login_user"]==$row["author"]){
 
-printf('<a class="badge bg-secondary text-decoration-none link-light"  href="edit.php?id=%d"> ویرایش </a>',$row["id"]);                       
+// echo '<a class="badge bg-secondary text-decoration-none link-light"  href="edit.php?id=$id"> ویرایش </a>';
+
+    printf('<a class="badge bg-secondary text-decoration-none link-light"  href="edit.php?id=%d"> ویرایش </a>',$row["id"]);  
+
+                                       }
+
+
+
+?>
 
                                       
   
-                                }
-                                
-                            }
+                             
                         
-                            ?>
+                           
 
                           
                             
@@ -195,7 +206,7 @@ printf('<a class="badge bg-secondary text-decoration-none link-light"  href="edi
 
 
 
-<?php include "index-footer.php"; ?>
+
 
 
 
@@ -204,3 +215,6 @@ printf('<a class="badge bg-secondary text-decoration-none link-light"  href="edi
     
 </body>
 </html>
+
+
+<?php include "index-footer.php"; ?>
