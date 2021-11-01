@@ -108,7 +108,7 @@
 
 
                 <form action="" class="search">
-                    <input class="search-box" type="search" placeholder="جستجو" style="width:100px">
+                    <input class="search-box" type="search" placeholder="جستجو" style="width:80px">
                     <a href="#" class="search-btn" type="submit">
                         <img src="./img/Layer 2.png" alt="search-icon">
                     </a>
@@ -124,12 +124,12 @@
                 <?php if(!isset($_SESSION["login_user"])){
 
 
-                    echo' <button class="dokmeh "><a href="register.php">ثبت نام </a></button>';
+                    echo '<button class="dokmeh "><a href="register.php">ثبت نام </a></button>';
                     echo '<button class="dokmeh "><a href="login.php"> ورود  </a></button>';
 
                }
                else{
-                    echo' <button class="dokmeh "><a href="compose.php"> نوشتن پست  </a></button>';
+                    echo '<button class="dokmeh "><a href="compose.php"> نوشتن پست  </a></button>';
                      echo '<button class="dokmeh "><a href="logout.php"> خروج  </a></button>';
                }
                 ?>

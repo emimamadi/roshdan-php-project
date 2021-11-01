@@ -80,10 +80,10 @@ if(!empty($_POST['fullname']) && !empty($_POST['username']) && !empty($_POST['pa
 		
 		<div class="form-group">
 		<label class="col-md-4 control-label">نام و نام خانوادگی</label>  
-		<div class="col-md-4 inputGroupContainer">
+		<div class="col-md-12 inputGroupContainer">
 		<div class="input-group">
 		<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-		<input  name="fullname" placeholder="First Name" class="form-control"  type="text">
+		<input  name="fullname" placeholder="نام و نام خانوادگی" class="form-control"  type="text">
 			</div>
 		</div>
 		</div>
@@ -92,10 +92,10 @@ if(!empty($_POST['fullname']) && !empty($_POST['username']) && !empty($_POST['pa
 		
 		<div class="form-group">
 		<label class="col-md-4 control-label">نام کاربری </label>  
-		<div class="col-md-4 inputGroupContainer">
+		<div class="col-md-12">
 		<div class="input-group">
 		<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-		<input  name="username" placeholder="Username" class="form-control"  type="text" >
+		<input  name="username" placeholder="نام کاربری" class="form-control"  type="text" >
 			</div>
 		</div>
 		</div>
@@ -104,10 +104,10 @@ if(!empty($_POST['fullname']) && !empty($_POST['username']) && !empty($_POST['pa
 		
 		<div class="form-group">
 		<label class="col-md-4 control-label" >رمز عبور </label> 
-			<div class="col-md-4 inputGroupContainer">
+			<div class="col-md-12 inputGroupContainer">
 			<div class="input-group">
 		<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-		<input name="password" placeholder="Password" class="form-control"  type="password">
+		<input name="password" placeholder="رمز عبور" class="form-control"  type="password">
 			</div>
 		</div>
 		</div>
@@ -116,7 +116,7 @@ if(!empty($_POST['fullname']) && !empty($_POST['username']) && !empty($_POST['pa
 		<!-- Button -->
 		<div class="form-group">
 		<label class="col-md-4 control-label"></label>
-		<div class="col-md-4"><br>
+		<div class="col-md-7"><br>
 		<button type="submit" name=register class="btn btn-warning" >ثبت نام  <span class="glyphicon glyphicon-send"></span></button>
 		</div> 
 		</div>

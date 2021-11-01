@@ -90,10 +90,10 @@ include "index-header.php";
 		
 		<div class="form-group">
 		<label class="col-md-8 control-label">اسم کاربری </label>  
-		<div class="col-md-8 inputGroupContainer">
+		<div class="col-md-12 inputGroupContainer">
 		<div class="input-group">
 		<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-		<input  name="username" placeholder="Username" class="form-control"  type="text">
+		<input  name="username" placeholder="اسم کاربری" class="form-control"  type="text">
 			</div>
 		</div>
 		</div>
@@ -102,10 +102,10 @@ include "index-header.php";
 		
 		<div class="form-group">
 		<label class="col-md-8 control-label" >رمز عبور </label> 
-			<div class="col-md-8 inputGroupContainer">
+			<div class="col-md-12 inputGroupContainer">
 			<div class="input-group">
 		<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-		<input name="password" placeholder="Password" class="form-control"  type="password">
+		<input name="password" placeholder="رمز عبور" class="form-control"  type="password">
 			</div>
 		</div>
 		</div>
@@ -115,14 +115,12 @@ include "index-header.php";
 		
 		<!-- Button -->
 		<div class="form-group">
-		<label class="col-md-6 control-label offset-6"></label>
-		<div class="col-md-6 offset-6" ><br>
+		<label class="col-md-6 "></label>
+		<div class="col-md-7" ><br>
 			<button type="submit" name="login" class="btn btn-warning"> <span class="glyphicon glyphicon-send"> ورود</span></button>
 		</div>
 		
-		<div class="col-md-12 " ><br>
-		<a href="register.php"><button class="btn btn-primary">ثبت نام</button></a>
-		</div>
+		
 		
 		</div>
 		
@@ -135,9 +133,8 @@ include "index-header.php";
 
 
 
+<?php include "index-footer.php"; ?>
 		
 </body>
 </html>
 
-
-<?php include "index-footer.php"; ?>

@@ -65,7 +65,7 @@ include "index-header.php";
 
 
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -133,10 +133,10 @@ include "index-header.php";
 		<!-- Text input-->
 		
 		<div class="form-group">
-		<label class="col-md-4 control-label">تاریخ  </label>  
-		<div class="col-md-4 inputGroupContainer">
+		<label class="col-md-4 ">تاریخ  </label>  
+		<div class="col-md-12 " style="direction:ltr">
 		<div class="input-group">
-		<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+		
 		<input  name="date" class="form-control"  type="date">
 			</div>
 		</div>
@@ -154,7 +154,7 @@ include "index-header.php";
 		<!-- Button -->
 		<div class="form-group">
 		<label class="col-md-2 control-label"></label>
-		<div class="col-md-10"><br>
+		<div class="col-md-12"><br>
 			<button type="submit" name=register class="btn btn-warning" > <span class="glyphicon glyphicon-send"> اضافه کردن</span></button>
 		</div>
 		</div>
