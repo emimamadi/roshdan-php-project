@@ -108,19 +108,6 @@ include "index-header.php";
 
 
 		<!-- Text input-->
-	
-		<!-- <div class="form-group">
-			<label class="col-md-12 control-label" >نویسنده</label> 
-				<div class="col-md-12 inputGroupContainer">
-				<div class="input-group">
-			<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-			<input name="author"  class="form-control"  type="text">
-				</div>
-			</div>
-			</div> -->
-
-
-		<!-- Text input-->
 		<div class="form-group">
 		<label class="col-md-12 control-label">دسته </label>  
 		<div class="col-md-12 inputGroupContainer">
