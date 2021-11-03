@@ -80,15 +80,19 @@ include "db.php";
 
 
 <?php                           
-                                        
-                                        
-                                        if($_SESSION["login_user"]==$row["author"]){
+                                       
+                                       if(!empty($_SESSION["login_user"])){
 
-// echo '<a class="badge bg-secondary text-decoration-none link-light"  href="edit.php?id=$id"> ویرایش </a>';
-
-    printf('<a class="badge bg-secondary text-decoration-none link-light"  href="edit.php?id=%d"> ویرایش </a>',$row["id"]);  
+                                           if($_SESSION["login_user"]==$row["author"]){
+    
+    // echo '<a class="badge bg-secondary text-decoration-none link-light"  href="edit.php?id=$id"> ویرایش </a>';
+    
+       printf('<a class="badge bg-secondary text-decoration-none link-light"  href="edit.php?id=%d"> ویرایش </a>',$row["id"]);  
+    
+                                          }
 
                                        }
+                                        
 
 
 

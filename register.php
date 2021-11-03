@@ -26,7 +26,7 @@ if(!empty($_POST['fullname']) && !empty($_POST['username']) && !empty($_POST['pa
 		$msg="error";
 	}
 
-	echo "New records created successfully";
+	// echo "New records created successfully";
 	
 	$stmt->close();
 	$conn->close();
