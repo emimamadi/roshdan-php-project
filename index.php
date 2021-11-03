@@ -89,7 +89,7 @@ echo "<br>";
 
         <!-- line1 -->
         <section id="line1">
-            <h2 class= text-center> پست ها</h2>
+            
             <div class="container">
 
                     
@@ -111,7 +111,7 @@ echo "<br>";
                     <figure class="figure">
                         <img src="./img/Layer 4-1.png" alt="user">
                         <div class="tag tag-tech">
-                            <p><?php echo $row["category"];?></p>
+                           <p><?php echo $row["category"];?></p>
                         </div>
                     </figure>
                     <h6 class="card-headline">
@@ -137,29 +137,6 @@ echo "<br>";
 
 
 
-                <!-- <div class="card">
-                    <figure class="figure">
-                        <img src="./img/Layer 4-2.png" alt="user">
-                        <div class="tag tag-trips">
-                            <p>سفرها</p>
-                        </div>
-                    </figure>
-                    <h6 class="card-headline">
-                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                    </h6>
-                    <div class="author-date">
-                        <div class="author">
-                            <a href="#">
-                                علی پیوندی
-                            </a>
-                        </div>
-                        <div class="date">
-                            <p>
-                                20 دی 1399
-                            </p>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </section>
 

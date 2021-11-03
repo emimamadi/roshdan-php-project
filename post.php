@@ -98,13 +98,7 @@ include "db.php";
 
 ?>
 
-                                      
-  
-                             
-                        
-                           
-
-                          
+                     
                             
 
                         </header>
