@@ -16,7 +16,7 @@ if(!empty($_POST['title'])){
 
 	$title=$_POST['title'];
 	$author=$_SESSION["login_user"];
-	// $_SESSION["author"]= $author;
+	
 	$category=$_POST['category'];
 	$content=$_POST['content'];
 	$date=$_POST['date'];

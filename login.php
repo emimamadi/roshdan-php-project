@@ -23,13 +23,7 @@ if(!empty($_POST['username']) && !empty($_POST['password'])){
 			
 	if($count == 1) {
 
-			// if(empty($_SESSION["login_user"])){
-
-					// session_register("myusername");
-
-					
-
-			// }
+	
 			
 			$_SESSION["login_user"] = $myusername;
 
