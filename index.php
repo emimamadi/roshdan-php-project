@@ -111,7 +111,7 @@ echo "<br>";
                     <figure class="figure">
                         <img src="./img/Layer 4-1.png" alt="user">
                         <div class="tag tag-tech">
-                           <p><?php echo $row["category"];?></p>
+                         <a href="category.php?category_id=<?php echo $row["category"];?>"><p><?php echo $row["category"];?></p></a>
                         </div>
                     </figure>
                     <h6 class="card-headline">

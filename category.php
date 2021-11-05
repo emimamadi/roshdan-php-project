@@ -1,3 +1,5 @@
+
+
 <?php
 
 session_start();
@@ -59,60 +61,15 @@ include "db.php";
 
                        <header class="mb-4" style="height:10vh;">
 
-                        <?php
-                              if(!empty($_GET['id']) ){
-
-                                $id = $_GET['id']; 
-                            
-                                $qry = mysqli_query($conn,"select * from post where id='$id' ");
-
-                                $row=mysqli_fetch_array($qry);                            
+                        <?php  
                         
-                        ?>
-
-                            <!-- Post title-->
-                            <h1 class="fw-bolder mb-1"><?php echo $row["title"] ; ?></h1>
-                            <!-- Post meta content-->
-                            <div class="text-muted fst-italic mb-2"><?php echo "در تاریخ  ".$row["date"]." نگارش با  ".$row["author"];?></div>
-                            <!-- Post categories-->
-                            <a class="badge bg-secondary text-decoration-none link-light mb-1" href="category.php?category_id=<?php echo $row["category"];?>"><?php echo $row["category"]; ?></a>
-
-
-
-                                <?php                           
-                                       
-                                       if(!empty($_SESSION["login_user"])){
-
-                                           if($_SESSION["login_user"]==$row["author"]){
-    
-                                 // echo '<a class="badge bg-secondary text-decoration-none link-light"  href="edit.php?id=$id"> ویرایش </a>';
-    
-                                printf('<a class="badge bg-secondary text-decoration-none link-light"  href="edit.php?id=%d"> ویرایش </a>',$row["id"]);  
-    
-                                          }
-
-                                       }
-                                        
-
-                                ?>
-
-
-
-
-                            
-
-                        </header>
-                        <!-- Preview image figure-->
-                        <figure class="mb-4"><img class="img-fluid rounded" src="https://dummyimage.com/900x400/ced4da/6c757d.jpg" alt="..." /></figure>
-                        <!-- Post content-->
-                        <section class="mb-5">
-                            <p class="fs-5 mb-4"><?php echo  $row["content"]; ?></p>
-                        </section>
-                        <?php } 
+                       
                         
-                        else {
+                        if(!empty($_GET['category_id']) ){
 
-                        $qry = mysqli_query($conn,"select * from post order by id desc");
+                        $category_id = $_GET['category_id'];     
+
+                        $qry = mysqli_query($conn,"select * from post where category='$category_id' order by id desc");
 
                         while($row=mysqli_fetch_array($qry)){
 
@@ -125,7 +82,7 @@ include "db.php";
                         <!-- Post meta content-->
                         <div class="text-muted fst-italic mb-2"><?php echo "در تاریخ ".$row["date"]." نگارش با  ".$row["author"];?></div>
                         <!-- Post categories-->
-                        <a class="badge bg-secondary text-decoration-none link-light mb-1" href="category.php?category_id=<?php echo $row["category"];?>"><?php echo $row["category"]; ?></a>
+                        <a class="badge bg-secondary text-decoration-none link-light mb-2" href="category.php?category_id=<?php echo $row["category"];?>"><?php echo $row["category"]; ?></a>
 
 
 

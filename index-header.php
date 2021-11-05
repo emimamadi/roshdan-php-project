@@ -99,12 +99,16 @@
 
 
                 <li>
+                <?php
+                if(!empty($_SESSION["login_user"])){
+        printf('<a class="badge bg-secondary"  href="#"> سلام %s </a>',$_SESSION["login_user"]); 
+                }   
+                ?>
                   
-                  <a href="#"  class="badge bg-secondary"> <?php 
-                   if(!empty($_SESSION["login_user"]))
-                  {echo "سلام " .$_SESSION["login_user"];}?> </a>
-                  
-                  </li>
+                </li>
+
+
+
 
 
                 <form action="" class="search">
