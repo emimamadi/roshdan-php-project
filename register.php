@@ -128,8 +128,7 @@ if(!empty($_POST['fullname']) && !empty($_POST['username']) && !empty($_POST['pa
 
 
 
-		
+<?php include "index-footer.php"; ?>
+
 </body>
 </html>
-
-<?php include "index-footer.php"; ?>
